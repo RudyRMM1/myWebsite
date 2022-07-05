@@ -1,0 +1,93 @@
+/* Set a style for all buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.Logout-confirm {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ff2314;
+}
+.Cancel {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #1437ff;
+}
+.Cancel , .Logout-confirm{
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius:5px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+ /* Enable scroll if needed */
+  background-color: rgb(150, 42, 132); /* Fallback color */
+  background-color: rgba(150, 42, 132,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #b968c9;
+  margin-top: 200px;
+  margin-right: auto; 
+  margin-bottom: 15%;
+  margin-left: auto;
+  border: 1px solid rgb(204, 49, 170);
+  border-radius: 10px;
+  width: 300px; /* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 3px;
+  top: 0px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+h2{
+    text-align: center;
+}

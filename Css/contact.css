@@ -1,0 +1,51 @@
+.logo2 {
+    height: 50px;
+    margin-left: 14px;
+}
+.header2{
+    height: 55px;/* ارتفاع الشريط*/
+
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;/* توزيع العناصر بشكل متساوي*/
+
+  position: fixed ;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgb(207, 142, 250);
+  border-bottom:1px solid rgb(197, 134, 240);
+}
+.main-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+    height: 90%;
+}
+.email{
+    display: flex;
+    font-size: 30px;
+    width: 400px;
+    background-color: white;
+    padding: 3px;
+    border: solid rgb(25, 0, 255) 2px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bg{
+    margin-top: 90px;
+    background-color: rgba(111, 0, 255, 0.514);
+}
+.ebox{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,138 @@
+.header {
+  height: 55px;/* ارتفاع الشريط*/
+
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;/* توزيع العناصر بشكل متساوي*/
+
+  position: fixed ;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgb(207, 142, 250);
+  border-bottom:1px solid rgb(197, 134, 240);
+  z-index: 1000;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;  /* توزيع العنصار في المنتصف*/
+}
+
+.hamburger-menu {
+  height: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.site-logo {
+  height: 50px;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px; /*القيمة الاعظمية للعرض*/
+ 
+}
+
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border:1px solid rgb(192, 192, 192) ;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;/* عرض الاطار صفر حتى يتقلص */
+}
+
+.search-bar::placeholder {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.search-button {
+  height: 36px;
+  width: 66px;
+  background-color: rgb(se240, 240, 240);
+  border:1px solid rgb(192, 192, 192) ;
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.search-button ,
+.voice-search-button,
+.contact-container{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.search-button .tooltip ,
+.voice-search-button .tooltip,
+.contact-container .tooltip{
+  position: absolute;
+  background-color: rgb(168, 104, 241);
+  color: white;
+  padding: 4px 8px; /*top and booten 4px left and right 8px   up right down left  */
+  border-radius: 2px;
+  font-size: 12px;
+  bottom:-30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.contact-container:hover .tooltip{
+  opacity: 1;
+}
+
+.search-icon {
+  height: 25px;
+
+}
+
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+}
+
+.voice-search-icon {
+  height: 24px;
+}
+
+.right-section {
+  width: 180px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+ /* flex-shrink: 0;منع تقلص*/
+}
+
+.contact-container{
+  margin-right: 30px;
+}
+.contact-icon {
+  height: 24px;
+
+}
+
+
+.current-user-picture {
+  height: 32px;
+  border-radius: 10px;
+
+}

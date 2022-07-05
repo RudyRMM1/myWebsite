@@ -1,0 +1,35 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 30px;
+    
+}
+@media (max-width:700px){
+    .grid{
+        grid-template-columns:1fr 1fr ;
+    }
+}
+@media (max-width:701px) and (min-width:999px){
+    .grid{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media (min-width:1000px){
+    .grid{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+.books {
+    width:100% ;
+    transition: 850ms;
+}  
+.fade{
+    opacity: 0;
+    transition: 850ms;
+}
+.unfade{
+    opacity: 1;
+    transition: 850ms;
+}

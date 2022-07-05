@@ -1,0 +1,173 @@
+
+<html lang="en">
+<head>
+    <title>Book Box</title>
+    <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="Css/General.css">
+    <link rel="stylesheet" href="Css/page.css">
+    <link rel="stylesheet" href="Css/sidebar.css">
+    <link rel="stylesheet" href="Css/logout.css">
+    <script src="java/1.js"></script>
+</head>
+<body class="body">
+  <!-- -->
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg" onclick="openNav()">
+      <a href="Main.html"> <img class="site-logo" src="icons/Site-Logo.svg"></a>
+    </div>
+    <div class="middle-section">
+     <!-- <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button> -->
+    </div>
+    <div class="right-section">
+
+      <div class="contact-container">
+
+         <a href="contact.html"> <img class="contact-icon" src="icons/contact.svg"></a>
+          <div class="tooltip">Contact with us</div>
+        </div>
+      <div>
+          <img class="current-user-picture" src="IMGS/img_avatar.png">
+      </div>
+      
+    </div>  
+  </header>
+
+  <nav class="sidebar">
+   <div class="sidebar-link" onclick="fadeall()">
+      <img src="icons/home.svg">
+      <div>Home</div> 
+    </div>
+    <div class="sidebar-link" onclick="Literature()">
+      <img src="icons/literature.svg">
+      <div>Literature</div>    
+    </div>
+    <div class="sidebar-link" onclick="Mystery()">
+      <img src="icons/mystery.svg">
+      <div>Mystery</div>
+    </div>
+    <div class="sidebar-link" onclick="Drama()">
+      <img src="icons/Drama.svg">
+      <div>Drama</div>
+    </div>
+    <div class="sidebar-link" onclick=" Educational()">
+      <img src="icons/educational.svg">
+      <div>Educational</div>
+    </div>
+    <div class="sidebar-link" onclick="Biography()">
+      <img src="icons/biography.svg">
+      <div>Biography</div>
+    </div>
+    <div class="sidebar-link" onclick="Science()">
+      <img src="icons/science.svg">
+      <div>science</div>
+    </div>
+  </nav>
+  <nav class="sidebar-hide" id="MySideBar">
+    <div class="hum">  <img class="hamburger-menu" src="icons/hamburger-menu.svg" onclick="closeNav()">
+      <a href="Main.html"><img class="site-logo" src="icons/Site-Logo.svg"></a>
+      </div>
+    <div class="sidebar-link2" onclick="fadeall()">
+        <img src="icons/home.svg">
+        <div>Home</div>    
+    </div>
+      
+    <div class="sidebar-link2" onclick="Literature()">
+      <img src="icons/literature.svg" >
+      <div>Literature</div>    
+    </div>
+    <div class="sidebar-link2" onclick="Mystery()">
+      <img src="icons/mystery.svg">
+      <div>Mystery</div>
+    </div>
+    <div class="sidebar-link2" onclick="Drama()">
+      <img src="icons/Drama.svg">
+      <div>Drama</div>
+    </div>
+    <div class="sidebar-link2" onclick="Educational()">
+      <img src="icons/educational.svg">
+      <div>Educational</div>
+    </div>
+    <div class="sidebar-link2" onclick="Biography()">
+      <img src="icons/biography.svg">
+      <div>Biography</div>
+    </div>
+    <div class="sidebar-link2" onclick="Science()">
+      <img src="icons/science.svg">
+      <div>science</div>
+    </div>
+    <hr>
+    <div class="logout" >
+      <div><button class="logout-button" onclick="document.getElementById('id01').style.display='block',closeNav()" >Logout</button></div>
+    </div>
+  </nav>
+
+ <main onclick="closeNav()"  id="main"> 
+    <section class="grid">
+      <div id="overlay">
+      </div>
+     <a id="1" href="Books/The Fourth Closet An AFK Book (Five Nights at Freddys Graphic Novel 3) (Scott Cawthon, Kira Breed-Wrisley) (z-lib.org) (1).pdf"><div ><img class="books"  
+        src="IMGS/The fourth closet.jpeg" alt="The fourth closet">
+    </div></a> 
+    <div id="2" ><img class="books"
+      src="IMGS/Sleepless City.jpg" alt="مدينة لا تنام">
+    </div>
+    <div id="3" ><img class="books" 
+      src="IMGS/beautiful things.jpg" alt="اشياء جميلة">
+    </div>
+    <div id="4"><img class="books" 
+      src="IMGS/DaVinci Code.jpg" alt="DaVinci Code">
+    </div>
+    <div id="5" ><img class="books" 
+      src="IMGS/the 10th death.jpg" alt="الضحية العاشرة">
+    </div>
+    <div id="6" ><img class="books" 
+      src="IMGS/Into The Pit.jpg" alt="Into The Pit">
+    </div>
+    <div id="7"><img class="books" 
+      src="IMGS/Horses whispers.jpg" alt="همس الجياد">
+    </div>
+    <div id="8" ><img class="books" 
+      src="IMGS/11 11.jpg" alt="">
+    </div>
+    <div id="9"><img class="books" 
+      src="IMGS/self power.png" alt="كيف تكسب قوة الشخصية">
+    </div>
+    <div id="10"><img class="books" 
+      src="IMGS/child.png" alt="تربية الطفل">
+    </div>
+    <div id="11"><img class="books" 
+      src="IMGS/bio.png" alt="اثقل من رضوى">
+    </div>
+    <div id="12"><img class="books" 
+      src="IMGS/Age of Science.png" alt="">
+    </div>
+    <div id="13"><img class="books" 
+      src="IMGS/plants.jpg" alt="">
+    </div>
+    <div id="14"><img class="books" 
+      src="IMGS/phy.jpg " alt="">
+    </div>
+    </section>
+      <div id="id01" class="modal">
+       <div class="modal-content animate" >
+           <h2> Are you Sure?</h2>
+           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <div class="buttons"> 
+                <a href="Login.html"><div> <button class="Logout-confirm" >logout</button></div></a>
+                <div> <button class="Cancel" onclick="document.getElementById('id01').style.display='none'">Cancel</button></div>
+            </div>
+            
+       </div>
+    </div>
+  </main>
+</body>
+</html>
